@@ -20,7 +20,7 @@ export class LandingComponent implements OnInit, AfterViewInit {
     private fb: FormBuilder,
     private renderer: Renderer,
     private _window: WindowRef,
-    @Inject(DOCUMENT) private _document: Document,
+    @Inject(DOCUMENT) private _document,
     private landingService: LandingService
   ) { }
 
