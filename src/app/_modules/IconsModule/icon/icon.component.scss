@@ -1,0 +1,112 @@
+:host {
+
+}
+
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+
+  svg {
+    height: 1em;
+    width: 1em;
+  }
+
+  &.svg-baseline {
+
+    svg {
+      bottom: -0.120em;
+      position: absolute;
+    }
+  }
+
+  &-small {
+    height: 0.8em;
+    width: 0.8em;
+
+    svg {
+      height: 0.8em;
+      width: 0.8em;
+    }
+
+    &.svg-baseline {
+
+      svg {
+        bottom: -0.08em;
+        position: absolute;
+      }
+    }
+  }
+
+  &-medium {
+    height: 1.45em;
+    width: 1.45em;
+
+    svg {
+      height: 1.45em;
+      width: 1.45em;
+    }
+
+    &.svg-baseline {
+
+      svg {
+        bottom: -0.22em;
+        position: absolute;
+      }
+
+    }
+  }
+
+  &-large {
+    height: 2.45em;
+    width: 2.45em;
+
+    svg {
+      height: 2.45em;
+      width: 2.45em;
+    }
+
+    &.svg-baseline {
+
+      svg {
+        bottom: -0.72em;
+        position: absolute;
+      }
+
+    }
+  }
+
+  &-xlarge {
+    height: 4em;
+    width: 4em;
+
+    svg {
+      height: 4em;
+      width: 4em;
+    }
+
+    &.svg-baseline {
+
+      svg {
+        bottom: -0.72em;
+        position: absolute;
+      }
+
+    }
+  }
+
+  &-auto {
+    height: auto;
+    width: auto;
+
+    svg {
+      height: 100%;
+      width: 100%;
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+}

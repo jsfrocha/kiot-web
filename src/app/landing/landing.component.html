@@ -172,4 +172,54 @@
     </div>
   </section>
 
+  <section class="answers">
+
+    <article class="answers__answer">
+      <div class="answers__answer__title">
+        <h3>Drop us a line below.</h3>
+      </div>
+      <form id="contact-form" [formGroup]="contactForm" (ngSubmit)="submitForm()" class="answers__answer__form edp-form" #cform="ngForm" novalidate>
+        <div class="form-group">
+          <md-input-container class="form-control">
+            <input type="text" md-input placeholder="Email" value="" formControlName="email" required/>
+            <md-hint class="hint--error" align="start" *ngIf="contactForm.controls['email'].hasError('required') && (contactForm.controls['email'].touched || cform.submitted)">This field is required</md-hint>
+            <md-hint class="hint--error" align="start" *ngIf="contactForm.controls['email'].hasError('validateEmail') && (contactForm.controls['email'].touched || cform.submitted)">Invalid email</md-hint>
+          </md-input-container>
+        </div>
+        <div class="form-group">
+          <md-input-container class="form-control">
+            <textarea md-input formControlName="message" placeholder="Message" class="form-control" required></textarea>
+            <md-hint class="hint--error" align="start" *ngIf="contactForm.controls['message'].hasError('required') && (contactForm.controls['message'].touched || cform.submitted)">This field is required</md-hint>
+          </md-input-container>
+        </div>
+
+        <div class="form--actions">
+          <button type="submit" class="edp-btn edp-btn--large edp-btn__cta" [disabled]="submitLoading">Send it!</button>
+        </div>
+
+        <div class="form--success-indicator">
+          <div class="form--success--icon">
+            <edp-icon [iconSize]="'xlarge'" [isBaselineIcon]="false" [iconPath]="'/assets/dashboard/icon_success_green.svg'"></edp-icon>
+          </div>
+          <div class="form--success--text">
+            Thanks! We'll get in touch as soon as possible.
+          </div>
+        </div>
+
+        <div class="form--error-indicator">
+          <div class="form--error--icon">
+            <edp-icon [iconSize]="'xlarge'" [isBaselineIcon]="false" [iconPath]="'/assets/dashboard/icon_error_red.svg'"></edp-icon>
+          </div>
+          <div class="form--error--text">
+            Oops, something bad has happened. Would you like to try again ?
+          </div>
+          <div class="form--error--actions">
+            <button class="edp-btn edp-btn--large" (click)="retryForm($event)">Retry</button>
+          </div>
+        </div>
+
+      </form>
+    </article>
+
+  </section>
 </main>

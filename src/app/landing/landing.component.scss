@@ -1,5 +1,7 @@
 @import '../../theme/mixins';
 @import '../../theme/variables';
+@import "../../theme/forms";
+
 
 .edp-landing {
   position: relative;
@@ -126,7 +128,7 @@
       &__body {
 
         p {
-          @include nunitoRegular(18px, 24px);
+          @include nunitoBold(18px, 24px);
           font-size: 18px;
           font-weight: 700;
         }
@@ -154,6 +156,10 @@
             }
           }
         }
+      }
+
+      &__form {
+        position: relative;
       }
     }
   }

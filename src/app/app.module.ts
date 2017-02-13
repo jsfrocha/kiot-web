@@ -9,17 +9,19 @@ import {AccountComponent} from "./account/account.component";
 import {LandingComponent} from "./landing/landing.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {WindowRef} from "./_services/window.service";
+import {SharedModule} from "./_shared/shared.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     AccountComponent,
-    LandingComponent
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
+    FormsModule,
+    SharedModule,
     AppRoutingModule
   ],
   providers: [

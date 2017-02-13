@@ -41,3 +41,99 @@ body {
   font-family: "NunitoSans-Regular";
   src: url('assets/fonts/NunitoSans-Regular.ttf') format("truetype")
 }
+
+
+.edp-btn {
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,.38);
+  color: rgba(0,0,0,.54);
+  outline: none !important;
+  background-color: transparent;
+
+  &[disabled] {
+    opacity: 0.2 !important;
+  }
+
+  transition: all 200ms ease;
+
+  &:hover {
+    border-color: $default-accent-color;
+    color: $default-accent-color;
+  }
+
+  &:active {
+    background-color: $pressed-btn-color;
+    color: #FFF;
+  }
+
+  &--large {
+    @include nunitoRegular(14px, 35px);
+    padding: 0 34px;
+  }
+
+  &--medium {
+    border-radius: 12px;
+    @include nunitoRegular(12px, 24px);
+    padding: 0 13px;
+  }
+
+  &--small {
+    border-radius: 9px;
+    @include nunitoRegular(10px, 16px);
+    padding: 0 13px;
+  }
+
+  &__cta {
+    background: $default-accent-color;
+    border-color: $default-accent-color;
+    color: #FFF;
+
+    &:hover {
+      background: $hover-cta-btn-color;
+      color: #FFF;
+    }
+
+    &:active {
+      background-color: $pressed-btn-color;
+      color: #FFF;
+    }
+  }
+
+  &__alert {
+    background: $alert-color;
+    border-color: $alert-color;
+    color: #FFF;
+
+    &:hover {
+      background: $alert-hover-color;
+      border-color: $alert-hover-color;
+      color: #FFF;
+    }
+
+    &:active {
+      background-color: $alert-pressed-color;
+      border-color: $alert-pressed-color;
+      color: #FFF;
+    }
+  }
+
+  &.edp-btn__default {
+    background: #FFF;
+
+    &.active {
+      background: $default-accent-color;
+      color: #FFF;
+    }
+  }
+
+  &.edp-btn__primary {
+    background: $default-accent-color;
+    color: #FFF;
+
+    transition: background 200ms ease;
+
+    &:hover {
+      background: darken($default-accent-color, 10%);
+    }
+  }
+}

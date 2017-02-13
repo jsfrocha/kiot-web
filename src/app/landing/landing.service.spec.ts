@@ -1,16 +1,16 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
-import { WindowRef } from './window.service';
+import { LandingService } from './landing.service';
 
-describe('WindowRef', () => {
+describe('LandingService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [WindowRef]
+      providers: [LandingService]
     });
   });
 
-  it('should ...', inject([WindowRef], (service: WindowRef) => {
+  it('should ...', inject([LandingService], (service: LandingService) => {
     expect(service).toBeTruthy();
   }));
 });

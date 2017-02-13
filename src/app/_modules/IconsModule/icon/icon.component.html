@@ -1,0 +1,13 @@
+<div class="svg-icon"
+     [ngClass]="
+     {
+      'svg-baseline': isBaselineIcon && iconSize !== 'auto',
+      'svg-icon-large': iconSize === 'large',
+      'svg-icon-medium': iconSize === 'medium',
+      'svg-icon-small': iconSize === 'small',
+      'svg-icon-xlarge': iconSize === 'xlarge',
+      'svg-icon-auto': iconSize === 'auto'
+      }"
+     [inlineSVG]="iconPath">
+
+</div>
