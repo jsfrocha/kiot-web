@@ -1,0 +1,47 @@
+@import 'variables';
+
+@mixin nunitoBold($size, $lineheight) {
+  font-family: $font-nunito-bold;
+  font-size: $size;
+  line-height: $lineheight;
+}
+
+@mixin nunitoRegular($size, $lineheight) {
+  font-family: $font-nunito-regular;
+  font-size: $size;
+  line-height: $lineheight;
+}
+
+@mixin biomeRegular($size, $lineheight) {
+  font-family: $font-biome;
+  font-size: $size;
+  line-height: $lineheight;
+}
+
+@mixin biomeLight($size, $lineheight) {
+  font-family: $font-biome-light;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $lineheight;
+}
+
+@mixin montserratBold($size, $lineheight) {
+  font-family: $font-montserrat-bold;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $lineheight;
+}
+
+@mixin montserratRegular($size, $lineheight) {
+  font-family: $font-montserrat-regular;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $lineheight;
+}
+
+@mixin montserratLight($size, $lineheight) {
+  font-family: $font-montserrat-light;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $lineheight;
+}

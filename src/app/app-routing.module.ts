@@ -1,7 +1,6 @@
 import {RouterModule, Routes} from "@angular/router";
 import {AccountComponent} from "./account/account.component";
 import {LandingComponent} from "./landing/landing.component";
-import {DashboardComponent} from "./dashboard/dashboard.component";
 import {AuthGuard} from "./_guards/auth.guard";
 import {NgModule} from "@angular/core";
 import {CustomPreloadStrategy} from "./app.preload";

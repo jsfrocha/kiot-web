@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Biome";
+  src: url('assets/fonts/Biome.woff') format("woff")
+}
+
+@font-face {
+  font-family: "Biome-Light";
+  src: url('assets/fonts/Biome-Light.woff') format("woff")
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url('assets/fonts/Montserrat-Bold.ttf') format("truetype")
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url('assets/fonts/Montserrat-Regular.ttf') format("truetype")
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url('assets/fonts/Montserrat-Light.ttf') format("truetype")
+}
+
+@font-face {
+  font-family: "NunitoSans-Bold";
+  src: url('assets/fonts/NunitoSans-Bold.ttf') format("truetype")
+}
+
+@font-face {
+  font-family: "NunitoSans-Regular";
+  src: url('assets/fonts/NunitoSans-Regular.ttf') format("truetype")
+}

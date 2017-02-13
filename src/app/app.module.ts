@@ -4,17 +4,28 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {UserService} from "./_services/user.service";
+import {AccountComponent} from "./account/account.component";
+import {LandingComponent} from "./landing/landing.component";
+import {AppRoutingModule} from "./app-routing.module";
+import {WindowRef} from "./_services/window.service";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AccountComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    UserService,
+    WindowRef
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
